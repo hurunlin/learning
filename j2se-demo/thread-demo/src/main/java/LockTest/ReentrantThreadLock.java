@@ -17,7 +17,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Description: Lock测试实现
  * @date 2017/5/29 20:41
  */
-public class ThreadLock implements Runnable {
+public class ReentrantThreadLock implements Runnable {
 
     // 创建锁
     public ReentrantLock lock = new ReentrantLock();
