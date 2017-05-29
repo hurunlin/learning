@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="BUILD_PROCESS_HEAP_SIZE" value="1500" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -15,6 +14,7 @@
     <bytecodeTargetLevel>
       <module name="demo-test" target="1.7" />
       <module name="j2se-demo" target="1.7" />
+      <module name="learning" target="1.7" />
       <module name="spring-boot" target="1.7" />
       <module name="spring-cloud" target="1.7" />
       <module name="spring-demo" target="1.7" />

@@ -29,8 +29,8 @@ public class Runner implements Runnable {
     private String name;
 
     /**
-     * @param cyclicBarrier
-     * @param name
+     * @param cyclicBarrier ：注入cyclicBarrier对象
+     * @param name ：运动员名称
      * @Description 构造方法
      */
     public Runner(CyclicBarrier cyclicBarrier, String name) {
@@ -59,6 +59,7 @@ public class Runner implements Runnable {
         } catch (BrokenBarrierException e) {
             e.printStackTrace();
         }
+        // 主线程继续往下执行！！
         System.out.println(name + "开始跑！");
     }
 }
