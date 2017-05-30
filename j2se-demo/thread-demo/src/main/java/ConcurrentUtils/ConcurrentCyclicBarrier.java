@@ -32,10 +32,16 @@ public class ConcurrentCyclicBarrier {
         // 创建线程池
         ExecutorService executor = Executors.newFixedThreadPool(3);
         // 提交任务
-        executor.submit(new Runner(cyclicBarrier, "张三"));
-        executor.submit(new Runner(cyclicBarrier, "李四"));
-        executor.submit(new Runner(cyclicBarrier, "王五"));
-        // 关闭线程池
+        try {
+            executor.submit(new Runner(cyclicBarrier, "张三"));
+            Thread.sleep(3000);
+            executor.submit(new Runner(cyclicBarrier, "李四"));
+            Thread.sleep(3000);
+            executor.submit(new Runner(cyclicBarrier, "王五"));
+            // 关闭线程池
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         executor.shutdown();
 
     }

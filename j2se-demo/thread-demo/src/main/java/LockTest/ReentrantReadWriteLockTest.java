@@ -38,12 +38,12 @@ public class ReentrantReadWriteLockTest {
         // 获取读锁
         readLock.lock();
         try {
-            System.out.println("当前线程："+Thread.currentThread().getName()+" 进入..." );
+            System.out.println("当前线程：" + Thread.currentThread().getName() + " 进入...");
             Thread.sleep(3000);
-            System.out.println("当前线程："+Thread.currentThread().getName()+" 退出..." );
+            System.out.println("当前线程：" + Thread.currentThread().getName() + " 退出...");
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             readLock.unlock();
         }
     }
@@ -58,12 +58,12 @@ public class ReentrantReadWriteLockTest {
         // 获取读锁
         writeLock.lock();
         try {
-            System.out.println("当前线程："+Thread.currentThread().getName()+" 进入..." );
+            System.out.println("当前线程：" + Thread.currentThread().getName() + " 进入...");
             Thread.sleep(3000);
-            System.out.println("当前线程："+Thread.currentThread().getName()+" 退出..." );
+            System.out.println("当前线程：" + Thread.currentThread().getName() + " 退出...");
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             writeLock.unlock();
         }
     }

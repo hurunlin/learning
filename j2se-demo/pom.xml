@@ -13,5 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>thread-demo</module>
+        <module>network-demo</module>
     </modules>
 </project>

@@ -32,7 +32,7 @@ public class ConcurrentCountDownLacth {
          * 2: 参数(1)需要有多少个任务需要初始化完成,1则需要有一个线程调用countDown,2则需要有两个线程调用countDown
          * 主线程才会继续往下执行
          */
-        final CountDownLatch countDown = new CountDownLatch(2);
+        final CountDownLatch countDown = new CountDownLatch(1);
         // 创建线程1
         Thread t1 = new Thread(new Runnable() {
             @Override
@@ -55,12 +55,12 @@ public class ConcurrentCountDownLacth {
                 try {
                     Thread.sleep(5000);
                     System.out.println("T2线程业务处理完成");
+                    // 通知T1线程继续执行
+                    countDown.countDown();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
-                // 通知T1线程继续执行
-                countDown.countDown();
             }
         });
 
