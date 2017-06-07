@@ -12,7 +12,4 @@
     <artifactId>thread-demo</artifactId>
     <packaging>pom</packaging>
     <name>thread-demo</name>
-    <modules>
-        <module>../j2se-network</module>
-    </modules>
 </project>
