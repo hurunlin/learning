@@ -1,4 +1,4 @@
-package cn.com.hrl.enums;
+package com.neo.enums;
 
 public enum UserSexEnum {
 	MAN, WOMAN

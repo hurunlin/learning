@@ -1,7 +1,7 @@
-package cn.com.hrl.mapper;
+package com.neo.mapper;
 
-import cn.com.hrl.enums.UserSexEnum;
-import cn.com.hrl.pojo.UserEntity;
+import com.neo.entity.UserEntity;
+import com.neo.enums.UserSexEnum;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
