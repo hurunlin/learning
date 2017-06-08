@@ -1,7 +1,7 @@
-package com.neo.mapper;
+package cn.com.hrl.mapper;
 
-import com.neo.entity.UserEntity;
-import com.neo.enums.UserSexEnum;
+import cn.com.hrl.entity.UserEntity;
+import cn.com.hrl.enums.UserSexEnum;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,7 +31,9 @@ public class UserMapperTest {
 	public void testQuery() throws Exception {
 		List<UserEntity> users = UserMapper.getAll();
 		System.out.println("==========================");
-		System.out.println("==="+users.toString()+"===");
+		for (UserEntity entity : users){
+			System.out.println("==="+entity.toString()+"===");
+		}
 		System.out.println("==========================");
 	}
 

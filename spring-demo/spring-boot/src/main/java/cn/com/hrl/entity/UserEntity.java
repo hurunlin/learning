@@ -1,6 +1,6 @@
-package com.neo.entity;
+package cn.com.hrl.entity;
 
-import com.neo.enums.UserSexEnum;
+import cn.com.hrl.enums.UserSexEnum;
 
 import java.io.Serializable;
 

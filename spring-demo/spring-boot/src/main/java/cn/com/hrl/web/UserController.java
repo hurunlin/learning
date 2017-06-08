@@ -1,7 +1,7 @@
-package com.neo.web;
+package cn.com.hrl.web;
 
-import com.neo.entity.UserEntity;
-import com.neo.mapper.UserMapper;
+import cn.com.hrl.entity.UserEntity;
+import cn.com.hrl.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

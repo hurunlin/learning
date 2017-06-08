@@ -1,4 +1,4 @@
-package com.neo;
+package cn.com.hrl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
