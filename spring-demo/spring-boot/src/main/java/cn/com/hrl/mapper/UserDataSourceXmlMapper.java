@@ -1,8 +1,8 @@
 /**
  * Project Name: learning
- * File Name: UserXmlMapper.java
+ * File Name: UserDataSourceXmlMapper.java
  * Package Name: cn.com.hrl.mapper
- * Date: 2017-06-09 9:41
+ * Date: 2017-06-09 14:26
  * Copyright (c) 2016, 杉德巍康企业服务有限公司.
  *
  * @author hu.rl
@@ -15,11 +15,11 @@ import cn.com.hrl.entity.UserEntity;
 import java.util.List;
 
 /**
- * ClassName: UserXmlMapper <br>
+ * ClassName: UserDataSourceXmlMapper <br>
  * Function: 用户Mapper<br>
- * Date:  2017-06-09 9:41 <br>
+ * Date:  2017-06-09 14:26 <br>
  */
-public interface UserXmlMapper extends BaseMapper<UserEntity> {
+public interface UserDataSourceXmlMapper extends BaseMapper<UserEntity>{
     /**
      * 插入用户信息
      * @param userEntity

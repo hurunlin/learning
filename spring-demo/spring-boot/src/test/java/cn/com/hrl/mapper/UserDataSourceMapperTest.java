@@ -9,6 +9,7 @@
  */
 package cn.com.hrl.mapper;
 
+import cn.com.hrl.Application;
 import cn.com.hrl.service.UserDataSourceSlaveService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,14 +24,16 @@ import javax.annotation.Resource;
  * Date:  2017-06-09 12:24 <br>
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest
-public class UserXmlMapperTest {
+@SpringBootTest(classes = Application.class)
+public class UserDataSourceMapperTest {
+
+
 
     @Resource
     private UserDataSourceSlaveService userDataSourceSlaveService;
 
     @Test
     public void test(){
-        System.out.println(userDataSourceSlaveService.getUserById(1));
+        System.out.println(userDataSourceSlaveService.getUserById(2));
     }
 }

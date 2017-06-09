@@ -10,24 +10,24 @@
 package cn.com.hrl.service.impl;
 
 import cn.com.hrl.entity.UserEntity;
-import cn.com.hrl.mapper.UserMapper;
-import cn.com.hrl.service.UserService;
+import cn.com.hrl.mapper.UserDataSourceXmlMapper;
+import cn.com.hrl.service.UserDataSourceSlaveService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * ClassName: UserServiceImpl <br>
- * Function: 用户业务类<br>
+ * Function: <br>
  * Date:  2017-06-09 9:31 <br>
  */
-@Service("userService")
-public class UserServiceImpl implements UserService {
+@Service("userDataSourceSlaveService")
+public class UserDataSourceSlaveServiceImpl implements UserDataSourceSlaveService {
 
     @Autowired
-    private UserMapper userMapper;
+    private UserDataSourceXmlMapper userDataSourceXmlMapper;
 
-    @Override
-    public UserEntity getOne(Long id) {
-        return userMapper.getOne(id);
+
+    public UserEntity getUserById(int id) {
+        return userDataSourceXmlMapper.getUserById(id);
     }
 }

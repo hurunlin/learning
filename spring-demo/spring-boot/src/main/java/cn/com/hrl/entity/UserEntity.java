@@ -1,9 +1,21 @@
+/**
+ * Project Name: learning
+ * File Name: UserXmlMapper.java
+ * Package Name: cn.com.hrl.mapper
+ * Date: 2017-06-09 9:41
+ * Copyright (c) 2016, 杉德巍康企业服务有限公司.
+ *
+ * @author hu.rl
+ */
 package cn.com.hrl.entity;
 
 import cn.com.hrl.enums.UserSexEnum;
 
 import java.io.Serializable;
 
+/**
+ * 用户实体
+ */
 public class UserEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
