@@ -15,36 +15,39 @@ import java.util.List;
 @SpringBootTest
 public class UserMapperTest {
 
-	@Autowired
-	private UserMapper UserMapper;
+    @Autowired
+    private UserMapper UserMapper;
 
-	@Test
-	public void testInsert() throws Exception {
-		UserMapper.insert(new UserEntity("aa", "a123456", UserSexEnum.MAN));
-		UserMapper.insert(new UserEntity("bb", "b123456", UserSexEnum.WOMAN));
-		UserMapper.insert(new UserEntity("cc", "b123456", UserSexEnum.WOMAN));
+    @Test
+    public void testInsert() throws Exception {
 
-		Assert.assertEquals(3, UserMapper.getAll().size());
-	}
+        /**
+         * 插入一百万数据
+         */
+        for (int i = 0; i < 1000000; i++) {
+            UserMapper.insert(new UserEntity("aa", "a123456", UserSexEnum.MAN));
+        }
+        Assert.assertEquals(3, UserMapper.getAll().size());
+    }
 
-	@Test
-	public void testQuery() throws Exception {
-		List<UserEntity> users = UserMapper.getAll();
-		System.out.println("==========================");
-		for (UserEntity entity : users){
-			System.out.println("==="+entity.toString()+"===");
-		}
-		System.out.println("==========================");
-	}
+    @Test
+    public void testQuery() throws Exception {
+        List<UserEntity> users = UserMapper.getAll();
+        System.out.println("==========================");
+        for (UserEntity entity : users) {
+            System.out.println("===" + entity.toString() + "===");
+        }
+        System.out.println("==========================");
+    }
 
 
-	@Test
-	public void testUpdate() throws Exception {
-		UserEntity user = UserMapper.getOne(3l);
-		System.out.println(user.toString());
-		user.setNickName("neo");
-		UserMapper.update(user);
-		Assert.assertTrue(("neo".equals(UserMapper.getOne(3l).getNickName())));
-	}
+    @Test
+    public void testUpdate() throws Exception {
+        UserEntity user = UserMapper.getOne(3l);
+        System.out.println(user.toString());
+        user.setNickName("neo");
+        UserMapper.update(user);
+        Assert.assertTrue(("neo".equals(UserMapper.getOne(3l).getNickName())));
+    }
 
 }
