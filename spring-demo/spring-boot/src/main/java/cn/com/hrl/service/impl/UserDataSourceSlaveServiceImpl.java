@@ -9,6 +9,7 @@
  */
 package cn.com.hrl.service.impl;
 
+import cn.com.hrl.database.mybatis.ReadOnlyConnection;
 import cn.com.hrl.entity.UserEntity;
 import cn.com.hrl.mapper.UserDataSourceXmlMapper;
 import cn.com.hrl.service.UserDataSourceSlaveService;
@@ -26,7 +27,7 @@ public class UserDataSourceSlaveServiceImpl implements UserDataSourceSlaveServic
     @Autowired
     private UserDataSourceXmlMapper userDataSourceXmlMapper;
 
-
+    @ReadOnlyConnection
     public UserEntity getUserById(int id) {
         return userDataSourceXmlMapper.getUserById(id);
     }

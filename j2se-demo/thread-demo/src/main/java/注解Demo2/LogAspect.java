@@ -16,7 +16,7 @@ public class LogAspect //extends AdminBaseController{
 	
 	*//**
 	 * 获取日志注解
-	 * @param joinPoint
+	 * @param joinPointLogAnnotation
 	 * @return
 	 * @throws SignatureException
 	 *//*

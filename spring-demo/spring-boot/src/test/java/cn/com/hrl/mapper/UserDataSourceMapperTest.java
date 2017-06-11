@@ -28,12 +28,11 @@ import javax.annotation.Resource;
 public class UserDataSourceMapperTest {
 
 
-
     @Resource
     private UserDataSourceSlaveService userDataSourceSlaveService;
 
     @Test
-    public void test(){
+    public void test() {
         System.out.println(userDataSourceSlaveService.getUserById(2));
     }
 }

@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
  * Created by Jason on 2017/3/6.
  */
 @Target({ElementType.METHOD, ElementType.TYPE})
+// 在运行时反射获取
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ReadOnlyConnection {
 }

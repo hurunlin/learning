@@ -1,13 +1,12 @@
 server:
     port: 9090
-
 logging:
     level:
         tk.mybatis: TRACE
 druid:
     type: com.alibaba.druid.pool.DruidDataSource
     master:
-        url: jdbc:mysql://localhost:3306/test1?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true
+        url: jdbc:mysql://192.168.199.222:3306/test?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: root
@@ -16,7 +15,7 @@ druid:
         max-active: 100
         test-on-borrow: true
     slave:
-        url: jdbc:mysql://localhost:3306/test2?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
+        url: jdbc:mysql://192.168.199.222:3306/test1?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: root
@@ -24,10 +23,12 @@ druid:
         min-idle: 1
         max-active: 100
         test-on-borrow: true
+
+# mybatis配置
 mybatis:
     type-aliases-package: cn.com.hrl.pojo
     mapper-locations: classpath*:/mapping/**Mapper.xml
-
+# 映射Mapper
 mapper:
     mappers:
         - cn.com.hrl.database.BaseMapper
@@ -39,3 +40,7 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+# 打印sql
+spring:
+  jps:
+    showsql: true
