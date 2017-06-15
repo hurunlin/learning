@@ -9,7 +9,6 @@
  */
 package cn.com.hrl.service;
 
-import cn.com.hrl.database.mybatis.ReadOnlyConnection;
 import cn.com.hrl.entity.UserEntity;
 
 /**
@@ -25,6 +24,5 @@ public interface UserDataSourceSlaveService {
      * @param id
      * @return
      */
-    @ReadOnlyConnection
     public UserEntity getUserById(int id);
 }

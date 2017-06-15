@@ -27,6 +27,9 @@ public interface UserDataSourceXmlMapper extends BaseMapper<UserEntity>{
      */
     public int insertUser(UserEntity userEntity);
 
+
+
+    
     /**
      * 获取所有用户信息
      * @return

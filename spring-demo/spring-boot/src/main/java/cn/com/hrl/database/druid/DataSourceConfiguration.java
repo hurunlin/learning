@@ -13,9 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
@@ -25,9 +23,9 @@ import javax.sql.DataSource;
  * Date:  2017-06-09 13:59 <br>
  */
 
-@Configuration
+//@Configuration
 // 通知spring开启事务
-@EnableTransactionManagement
+//@EnableTransactionManagement
 public class DataSourceConfiguration {
     @Value("${druid.type}")
     private Class<? extends DataSource> dataSourceType;

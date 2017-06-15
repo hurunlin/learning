@@ -16,9 +16,7 @@ import com.alibaba.druid.support.logging.LogFactory;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.aspectj.apache.bcel.util.ClassLoaderRepository;
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 import javax.annotation.Resource;
@@ -31,8 +29,8 @@ import java.util.Map;
  * Date:  2017-06-09 14:01 <br>
  */
 // 注入bean
-@Configuration
-@AutoConfigureAfter({DataSourceConfiguration.class})
+//@Configuration
+//@AutoConfigureAfter({DataSourceConfiguration.class})
 public class MybatisConfiguration extends MybatisAutoConfiguration{
 
     private static Log logger = LogFactory.getLog(MybatisConfiguration.class);

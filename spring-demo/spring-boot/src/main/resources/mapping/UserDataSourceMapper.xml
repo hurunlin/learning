@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="cn.com.hrl.mapper.UserDataSourceXmlMapper">
-    <select id="findUserAll" resultType="cn.com.hrl.entity.UserEntity">
-    <![CDATA[
 
+    <resultMap id="resultMap" type="cn.com.hrl.entity.UserEntity">
+        <id property="id" column="id" javaType="Long" jdbcType="BIGINT"/>
+        <result property="userName" column="user_name" javaType="String" jdbcType="VARCHAR"/>
+        <result property="passWord" column="pass_word" javaType="String" jdbcType="VARCHAR"/>
+        <result property="userSex" column="user_sex" javaType="cn.com.hrl.enums.UserSexEnum" jdbcType="VARCHAR"/>
+        <result property="nickName" column="nick_name" javaType="String" jdbcType="VARCHAR"/>
+    </resultMap>
 
-
-
+    <select id="findUserAll" resultMap="resultMap">
             select  * from users;
+    </select>
 
-
-
-
-        ]]>
-  </select>
-
-    <select id="getUserById" parameterType="int"
-            resultType="cn.com.hrl.entity.UserEntity">
-    <![CDATA[
-
+    <select id="getUserById" parameterType="int" resultMap="resultMap">
             select * from users
 			 where
             id = #{id}
-
-        ]]>
   </select>
     <insert id="insertUser" parameterType="cn.com.hrl.entity.UserEntity"
             keyColumn="`id`" keyProperty="`id`" useGeneratedKeys="true">
-        INSERT INTO users(userName,passWord,userSex) VALUES(#{userName}, #{passWord}, #{userSex});
+        INSERT INTO users(user_name,pass_word,user_sex) VALUES(#{userName}, #{passWord}, #{userSex});
     </insert>
 </mapper>
