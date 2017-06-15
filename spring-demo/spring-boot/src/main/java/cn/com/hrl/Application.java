@@ -23,12 +23,12 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 // 注册动态数据源
 @Import({DynamicDataSourceRegister.class})
 public class Application  extends SpringBootServletInitializer {
+
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(Application.class);
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-
-
 }
