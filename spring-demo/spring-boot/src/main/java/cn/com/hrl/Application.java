@@ -20,12 +20,12 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @MapperScan("cn.com.hrl.mapper")
 //@Import({DynamicDataSourceRegister.class})
 public class Application  extends SpringBootServletInitializer {
+
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(Application.class);
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-
-
 }

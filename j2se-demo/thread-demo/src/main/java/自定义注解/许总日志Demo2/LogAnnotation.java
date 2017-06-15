@@ -1,4 +1,4 @@
-package 自定义注解.注解Demo2;
+package 自定义注解.许总日志Demo2;
 
 import java.lang.annotation.*;
 
