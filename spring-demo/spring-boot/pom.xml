@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>spring-boot</groupId>
-    <artifactId>spring-boot-mybatis-annotation</artifactId>
+    <artifactId>spring-boot</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
