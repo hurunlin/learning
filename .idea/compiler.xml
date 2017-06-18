@@ -14,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbo-demo" target="1.7" />
       <module name="j2se-demo" target="1.7" />
       <module name="j2se-network" target="1.7" />
       <module name="learning" target="1.7" />

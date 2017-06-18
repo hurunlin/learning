@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-demo.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-facaed/dubbo-facaed.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-facaed/dubbo-facaed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-providers/dubbo-providers.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-providers/dubbo-providers.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/j2se-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/j2se-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/network-demo/j2se-network.iml" filepath="$PROJECT_DIR$/j2se-demo/network-demo/j2se-network.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
