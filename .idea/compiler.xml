@@ -6,16 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="j2se-network" />
         <module name="network-demo" />
         <module name="spring-boot" />
+        <module name="spring-boot-mybatis-annotation" />
         <module name="spring-cloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="j2se-demo" target="1.7" />
+      <module name="j2se-network" target="1.7" />
       <module name="learning" target="1.7" />
       <module name="network-demo" target="1.7" />
       <module name="spring-boot" target="1.7" />
+      <module name="spring-boot-mybatis-annotation" target="1.7" />
       <module name="spring-cloud" target="1.7" />
       <module name="spring-demo" target="1.7" />
       <module name="thread-demo" target="1.7" />
