@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://E:\IDEAWorkSpace\learning\dubbo-demo\dubbo-consumer\dubbo-consumer.iml" filepath="E:\IDEAWorkSpace\learning\dubbo-demo\dubbo-consumer\dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-provider/dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/j2se-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/j2se-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/network-demo/network-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/network-demo/network-demo.iml" />
