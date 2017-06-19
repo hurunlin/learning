@@ -17,7 +17,7 @@
     <modules>
         <module>spring-demo</module>
         <module>j2se-demo</module>
-        <module>dubbo</module>
+        <module>dubbo-demo</module>
     </modules>
 
     <!-- jar引用 -->
