@@ -9,9 +9,7 @@
         <module name="dubbo-consumer" />
         <module name="dubbo-facaed" />
         <module name="dubbo-providers" />
-        <module name="j2se-network" />
         <module name="mwareES-demo" />
-        <module name="network-demo" />
         <module name="spring-boot" />
         <module name="spring-boot-mybatis-annotation" />
         <module name="spring-cloud" />
