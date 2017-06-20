@@ -15,8 +15,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mwareES-demo</module>
+        <module>es-demo</module>
         <module>redis-demo</module>
+        <module>es-demo</module>
     </modules>
 
 

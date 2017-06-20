@@ -9,7 +9,8 @@
         <module name="dubbo-consumer" />
         <module name="dubbo-facaed" />
         <module name="dubbo-providers" />
-        <module name="mwareES-demo" />
+        <module name="es-demo" />
+        <module name="redis-demo" />
         <module name="spring-boot" />
         <module name="spring-boot-mybatis-annotation" />
         <module name="spring-cloud" />
@@ -21,6 +22,7 @@
       <module name="dubbo-facaed" target="1.7" />
       <module name="dubbo-providers" target="1.7" />
       <module name="elasticsearch-demo" target="1.7" />
+      <module name="es-demo" target="1.7" />
       <module name="j2se-demo" target="1.7" />
       <module name="j2se-network" target="1.7" />
       <module name="learning" target="1.7" />
@@ -28,6 +30,7 @@
       <module name="mware-demo" target="1.7" />
       <module name="mwareES-demo" target="1.7" />
       <module name="network-demo" target="1.7" />
+      <module name="redis-demo" target="1.7" />
       <module name="spring-boot" target="1.7" />
       <module name="spring-boot-mybatis-annotation" target="1.7" />
       <module name="spring-cloud" target="1.7" />
