@@ -18,6 +18,7 @@
         <module>spring-demo</module>
         <module>j2se-demo</module>
         <module>dubbo-demo</module>
+        <module>middleware-demo</module>
     </modules>
 
     <!-- jar引用 -->
