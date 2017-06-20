@@ -7,7 +7,7 @@
  *
  * @author hu.rl
  */
-package enums.enum2;
+package cn.com.se.enums.enum2;
 
 /**
  * ClassName: Food <br>

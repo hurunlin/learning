@@ -7,7 +7,7 @@
  *
  * @author hu.rl
  */
-package enums.enum1;
+package cn.com.se.enums.enum1;
 
 /**
  * ClassName: Test <br>
