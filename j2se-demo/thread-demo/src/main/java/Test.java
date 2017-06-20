@@ -1,30 +1,72 @@
 public class Test {
-    @Override
-    public String toString() {
-        return "test toString";
+    private int id;
+    private String name;
+    private String phoneNumber;
+    private String address;
+    private boolean a = true;
+
+    public Test() {
     }
-}
-class B extends Test {
-    String a = "11111111";
-    String b;
-    public B(String b) {
-        this.b = b;
+
+    public Test setId(int id) {
+        this.id = id;
+        return this;
     }
-    @Override
-    public String toString() {
-        return "b toString " + b;
+
+    public Test setName(String name) {
+        this.name = name;
+        return this;
     }
-}
-class C extends Test {
+
+    public Test setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+        return this;
+    }
+
+    public Test setAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
+    public Test printId() {
+        System.out.println(this.id);
+        return this;
+    }
+
+    public Test printName() {
+        System.out.println(this.name);
+        return this;
+    }
+
+    public Test printPhoneNumber() {
+        System.out.println(this.phoneNumber);
+        return this;
+    }
+
+    public Test printAddress() {
+        System.out.println(this.address);
+        return this;
+    }
+
+    public void setA(boolean a) {
+        System.out.println(this.a = false);
+    }
+
+    public Test getA() {
+        System.out.println(this.a);
+        return this;
+    }
 }
 
 class A {
     public static void main(String[] args) {
-        B b = new B("22222222");
-        System.out.println(b);
-        System.out.println(b.a);
-        C c = new C();
-        System.out.println(c);
+        Test test = new Test();
+        test.setId(3).setName("John").setPhoneNumber("1111111").setAddress("US").setA(false);
+        test.printId()
+                .printName()
+                .printPhoneNumber()
+                .printAddress()
+                .getA();
     }
 }
 
