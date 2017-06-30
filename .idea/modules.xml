@@ -8,14 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-providers/dubbo-providers.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-providers/dubbo-providers.iml" />
       <module fileurl="file://$PROJECT_DIR$/mware-demo/es-demo/es-demo.iml" filepath="$PROJECT_DIR$/mware-demo/es-demo/es-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/j2se-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/j2se-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/j2se-demo/network-demo/j2se-network.iml" filepath="$PROJECT_DIR$/j2se-demo/network-demo/j2se-network.iml" />
+      <module fileurl="file://E:\IDEAWorkSpace\learning\j2se-demo\network-demo\j2se-network.iml" filepath="E:\IDEAWorkSpace\learning\j2se-demo\network-demo\j2se-network.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/mware-demo/mware-demo.iml" filepath="$PROJECT_DIR$/mware-demo/mware-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/network-demo/network-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/network-demo/network-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mware-demo/redis-demo/redis-demo.iml" filepath="$PROJECT_DIR$/mware-demo/redis-demo/redis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/se-demo/se-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/se-demo/se-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-demo/spring-boot/spring-boot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-demo/spring-boot/spring-boot-mybatis-annotation.iml" filepath="$PROJECT_DIR$/spring-demo/spring-boot/spring-boot-mybatis-annotation.iml" />
+      <module fileurl="file://E:\IDEAWorkSpace\learning\spring-demo\spring-boot\spring-boot-mybatis-annotation.iml" filepath="E:\IDEAWorkSpace\learning\spring-demo\spring-boot\spring-boot-mybatis-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo/spring-cloud/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-demo/spring-cloud/spring-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo/spring-demo.iml" filepath="$PROJECT_DIR$/spring-demo/spring-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2se-demo/thread-demo/thread-demo.iml" filepath="$PROJECT_DIR$/j2se-demo/thread-demo/thread-demo.iml" />
