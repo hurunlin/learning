@@ -19,6 +19,7 @@
         <module>j2se-demo</module>
         <module>dubbo-demo</module>
         <module>mware-demo</module>
+        <module>netty-demo</module>
     </modules>
 
     <!-- jar引用 -->
@@ -27,6 +28,12 @@
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
             <version>3.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>5.0.0.Alpha1</version>
         </dependency>
     </dependencies>
 
