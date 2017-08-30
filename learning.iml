@@ -8,10 +8,13 @@
       <sourceFolder url="file://$MODULE_DIR$/dubbo-demo/dubbo-provider/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dubbo-demo/dubbo-consumer/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/dubbo-demo/dubbo-provider/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/netty-demo/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/netty-demo/src/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: com.lmax:disruptor:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:5.0.0.Alpha1" level="project" />
   </component>
 </module>

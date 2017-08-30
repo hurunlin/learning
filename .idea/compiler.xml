@@ -10,6 +10,7 @@
         <module name="dubbo-facaed" />
         <module name="dubbo-providers" />
         <module name="es-demo" />
+        <module name="netty-demo" />
         <module name="redis-demo" />
         <module name="se-demo" />
         <module name="spring-boot" />
@@ -30,6 +31,7 @@
       <module name="middleware-demo" target="1.7" />
       <module name="mware-demo" target="1.7" />
       <module name="mwareES-demo" target="1.7" />
+      <module name="netty-demo" target="1.7" />
       <module name="network-demo" target="1.7" />
       <module name="redis-demo" target="1.7" />
       <module name="se-demo" target="1.7" />
