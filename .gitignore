@@ -1,1 +1,14 @@
+.settings
+.project
+.classpath
+target
+.springBeans
+logs
+dubbo.cache
+dubbo.cache.lock
+output
 *.iml
+.idea/
+.gitignore
+*.jar
+/sql.txt

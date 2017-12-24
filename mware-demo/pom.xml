@@ -10,9 +10,17 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <!-- 包版本 -->
+    <properties>
+        <mware.demo.version>0.0.1</mware.demo.version>
+    </properties>
+
+
     <artifactId>mware-demo</artifactId>
     <name>mware-demo</name>
     <packaging>pom</packaging>
+
+
 
     <modules>
         <module>es-demo</module>

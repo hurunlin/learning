@@ -2,21 +2,45 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
+    <!-- 继承父项目 -->
     <parent>
         <artifactId>learning</artifactId>
         <groupId>com.test</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
+    <!-- 模型版本号 -->
+    <modelVersion>${model.version}</modelVersion>
+
+
+    <!-- 各个jar版本管理 -->
+    <properties>
+        <!-- 内部引用 -->
+        <network.demo>1.0.1</network.demo>
+        <se.demo>1.0.1</se.demo>
+        <thread.demo>1.0.1</thread.demo>
+
+        <!-- 外部引用 -->
+        <logback.version>1.1.3</logback.version>
+    </properties>
+
+    <!-- 本项目版本号 -->
     <artifactId>j2se-demo</artifactId>
     <name>j2se-demo</name>
     <packaging>pom</packaging>
+    <version>${j2se.demo}</version>
 
+    <!-- 子模块 -->
     <modules>
         <module>thread-demo</module>
         <module>network-demo</module>
         <module>se-demo</module>
     </modules>
+
+    <!-- 父项目共享jar -->
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 </project>

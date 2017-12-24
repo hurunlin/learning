@@ -2,22 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- 继承父工程配置 -->
     <parent>
         <artifactId>learning</artifactId>
         <groupId>com.test</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>dubbo-demo</artifactId>
-    <name>dubbo-demo</name>
-    <modules>
-        <module>dubbo-consumer</module>
-        <module>dubbo-facaed</module>
-        <module>dubbo-providers</module>
-    </modules>
-    <packaging>pom</packaging>
 
+    <!-- 模型版本号 -->
+    <modelVersion>${model.version}</modelVersion>
+    <!-- 各个jar版本管理 -->
     <properties>
+        <!-- 本项目jar -->
+        <dubbo.consumer>1.0.1</dubbo.consumer>
+        <dubbo.facaed>1.0.1</dubbo.facaed>
+        <dubbo.providers>1.0.1</dubbo.providers>
+        <!-- 外部引用jar -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.0.2.RELEASE</spring.version>
         <javax.servlet.version>2.5</javax.servlet.version>
@@ -29,6 +30,19 @@
         <servlet.version>2.5</servlet.version>
         <jackson.version>2.3.1</jackson.version>
     </properties>
+
+    <!-- 本项目版本号 -->
+    <artifactId>dubbo-demo</artifactId>
+    <name>dubbo-demo</name>
+    <packaging>pom</packaging>
+    <version>${dubbo.demo}</version>
+
+    <!-- 子模块 -->
+    <modules>
+        <module>dubbo-consumer</module>
+        <module>dubbo-facaed</module>
+        <module>dubbo-providers</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -197,6 +211,7 @@
             </dependency>
             <!-- end -->
 
+            <!-- servlet jar start -->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>jstl</artifactId>
@@ -215,6 +230,7 @@
                 <version>${jsp.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- servlet jar end -->
 
             <dependency>
                 <groupId>com.alibaba</groupId>

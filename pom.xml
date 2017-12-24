@@ -2,16 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <!-- 全局属性 -->
     <properties>
+        <dubbo.demo>1.0.1-SNAPSHOT</dubbo.demo>
+        <j2se.demo>1.0.1-SNAPSHOT</j2se.demo>
+        <mware.demo>1.0.1-SNAPSHOT</mware.demo>
+        <netty.demo>1.0.1-SNAPSHOT</netty.demo>
+        <spring.demo>1.0.1-SNAPSHOT</spring.demo>
+        <learning>1.0.1-SNAPSHOT</learning>
+        <model.version>4.0.0</model.version>
     </properties>
 
+    <!-- 模型版本号 -->
+    <modelVersion>${model.version}</modelVersion>
+
     <!-- pom项目属性 -->
-    <modelVersion>4.0.0</modelVersion>
     <groupId>com.test</groupId>
     <artifactId>learning</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>${learning}</version>
 
     <!-- 模块管理 -->
     <modules>
@@ -41,7 +51,7 @@
 
     <!-- 整个工程构建 -->
     <build>
-        <defaultGoal>clean compile </defaultGoal>
+        <defaultGoal>clean compile</defaultGoal>
         <plugins>
             <!-- 清理 -->
             <plugin>
