@@ -38,9 +38,9 @@
     </modules>
 
     <!-- 父项目共享jar -->
-    <dependencyManagement>
+   <!-- <dependencyManagement>
         <dependencies>
 
         </dependencies>
-    </dependencyManagement>
+    </dependencyManagement>-->
 </project>
