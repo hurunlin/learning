@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="dubbo" />
         <module name="dubbo-consumer" />
         <module name="dubbo-provider" />
         <module name="network-demo" />
+        <module name="se-demo" />
         <module name="spring-boot" />
         <module name="spring-cloud" />
       </profile>
@@ -26,6 +22,7 @@
       <module name="j2se-demo" target="1.7" />
       <module name="learning" target="1.7" />
       <module name="network-demo" target="1.7" />
+      <module name="se-demo" target="1.7" />
       <module name="spring-boot" target="1.7" />
       <module name="spring-cloud" target="1.7" />
       <module name="spring-demo" target="1.7" />

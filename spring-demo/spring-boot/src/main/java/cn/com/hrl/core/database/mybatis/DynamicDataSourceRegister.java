@@ -7,7 +7,7 @@
  *
  * @author hu.rl
  */
-package cn.com.hrl.database.mybatis;
+package cn.com.hrl.core.database.mybatis;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

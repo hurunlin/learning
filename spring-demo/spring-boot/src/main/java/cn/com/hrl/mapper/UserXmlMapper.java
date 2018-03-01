@@ -9,7 +9,7 @@
  */
 package cn.com.hrl.mapper;
 
-import cn.com.hrl.database.BaseMapper;
+import cn.com.hrl.core.database.BaseMapper;
 import cn.com.hrl.entity.UserEntity;
 
 import java.util.List;

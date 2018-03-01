@@ -1,4 +1,4 @@
-package cn.com.hrl.database.mybatis;
+package cn.com.hrl.core.database.mybatis;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

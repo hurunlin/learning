@@ -7,10 +7,10 @@
  *
  * @author hu.rl
  */
-package cn.com.hrl.database.druid;
+package cn.com.hrl.core.database.druid;
 
-import cn.com.hrl.database.mybatis.DbContextHolder;
-import cn.com.hrl.database.mybatis.ReadWriteSplitRoutingDataSource;
+import cn.com.hrl.core.database.mybatis.DbContextHolder;
+import cn.com.hrl.core.database.mybatis.ReadWriteSplitRoutingDataSource;
 import com.alibaba.druid.support.logging.Log;
 import com.alibaba.druid.support.logging.LogFactory;
 import org.apache.ibatis.session.SqlSessionFactory;

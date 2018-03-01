@@ -16,4 +16,4 @@ custom.datasource.slave.password=root
 #É¨ÃèBean
 mybatis.type-aliases-package=cn.com.hrl.pojo
 # É¨ÃèmybatisÅäÖÃÎÄ¼ş
-mybatis.mapper-locations=classpath*:/mapping/**Mapper.xml
+mybatis.mapper-locations=classpath*:cn/com/hrl/**/mapping/*.xml

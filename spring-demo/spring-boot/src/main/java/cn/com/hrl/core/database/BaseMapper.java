@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package cn.com.hrl.database;
+package cn.com.hrl.core.database;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;

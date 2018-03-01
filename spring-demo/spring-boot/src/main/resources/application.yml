@@ -27,7 +27,7 @@ druid:
 # mybatis配置
 mybatis:
     type-aliases-package: cn.com.hrl.pojo
-    mapper-locations: classpath*:/mapping/**Mapper.xml
+    mapper-locations: classpath*:cn/com/hrl/**/mapping/*.xml
 # 映射Mapper
 mapper:
     mappers:

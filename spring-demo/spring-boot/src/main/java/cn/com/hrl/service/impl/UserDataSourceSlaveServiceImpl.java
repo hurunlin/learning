@@ -9,7 +9,7 @@
  */
 package cn.com.hrl.service.impl;
 
-import cn.com.hrl.database.mybatis.ReadOnlyConnection;
+import cn.com.hrl.core.database.mybatis.ReadOnlyConnection;
 import cn.com.hrl.entity.UserEntity;
 import cn.com.hrl.mapper.UserDataSourceXmlMapper;
 import cn.com.hrl.service.UserDataSourceSlaveService;

@@ -7,7 +7,7 @@
  *
  * @author hu.rl
  */
-package cn.com.hrl.database.druid;
+package cn.com.hrl.core.database.druid;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;

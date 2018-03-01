@@ -1,4 +1,4 @@
-package cn.com.hrl.database.mybatis;
+package cn.com.hrl.core.database.mybatis;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
