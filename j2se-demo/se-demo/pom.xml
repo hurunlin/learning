@@ -7,10 +7,23 @@
         <groupId>com.test</groupId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
+
     <modelVersion>${model.version}</modelVersion>
 
     <artifactId>se-demo</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
+    </dependencies>
 
 </project>
